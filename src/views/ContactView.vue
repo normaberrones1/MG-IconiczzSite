@@ -1,10 +1,23 @@
 <template>
     <div class="contact">
-      <h1>This is a contact page</h1>
+        <ContactInfo />
     </div>
-  </template>
+</template>
   
-  <style>
+
+<script>
+    import ContactInfo from '@/components/ContactInfo.vue'
+
+    export default {
+        components: {
+            ContactInfo
+        }
+    }
+</script>
+
+<style>
+
+
   @media (min-width: 1024px) {
     .contact {
       min-height: 100vh;
@@ -12,5 +25,5 @@
       align-items: center;
     }
   }
-  </style>
+</style>
   

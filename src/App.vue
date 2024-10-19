@@ -1,17 +1,11 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="Mike Gonzalez & The Iconiczz" />
+      <HomeDescription msg="Mike Gonzalez & The Iconiczz" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/home">Home</RouterLink>
         <RouterLink to="/shows">Shows</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
         <RouterLink to="/merch">Merch</RouterLink>
@@ -21,6 +15,13 @@ import HelloWorld from './components/HelloWorld.vue'
 
   <RouterView />
 </template>
+
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+import HomeDescription from './components/HomeDescription.vue';
+
+
+</script>
 
 <style scoped>
 header {

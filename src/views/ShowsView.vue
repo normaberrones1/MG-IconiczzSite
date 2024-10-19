@@ -1,8 +1,21 @@
 <template>
   <div class="shows">
-    <h1>This is a shows page</h1>
+    <UpcomingShows />
   </div>
+  
 </template>
+
+
+<script>
+import UpcomingShows from '@/components/UpcomingShows.vue'
+
+export default {
+  components: {
+    UpcomingShows
+  }
+}
+</script>
+
 
 <style>
 @media (min-width: 1024px) {

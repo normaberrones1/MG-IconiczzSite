@@ -1,9 +1,27 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+<template>
+<div class="home">
+  <BandImages />
+</div>
+
+</template>
+
+<script>
+import BandImages from '@/components/BandImages.vue';
+
+export default {
+  components: {
+    BandImages
+  }
+}
+
 </script>
 
-<template>
-  <main>
-    <TheWelcome />
-  </main>
-</template>
+<style>
+@media (min-width: 1024px) {
+  .home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+</style>

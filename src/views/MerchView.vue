@@ -1,8 +1,21 @@
 <template>
     <div class="merch">
-      <h1>This is a merch page</h1>
+
+        <BandMerch />
     </div>
-  </template>
+</template>
+
+<script>
+import BandMerch from '@/components/BandMerch.vue'
+
+export default {
+  components: {
+    BandMerch
+  }
+}
+
+
+</script>
   
   <style>
   @media (min-width: 1024px) {
