@@ -18,6 +18,11 @@ defineProps({
 
 <style scoped>
 
+.greetings {
+  text-align: center;
+  
+  margin-top: 2rem;
+}
 
 
 </style>

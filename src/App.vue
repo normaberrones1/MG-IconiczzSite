@@ -33,6 +33,14 @@ import HomeDescription from './components/HomeDescription.vue';
 
 <style scoped>
 
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem 0;
+}
+
 
 nav a.router-link-exact-active {
   color: var(--color-text);
@@ -44,7 +52,6 @@ nav a.router-link-exact-active:hover {
 
 nav a {
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
 }
 
 nav a:first-of-type {
@@ -58,7 +65,8 @@ nav a:first-of-type {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  padding: 20.3rem;
+  padding: 19.0rem;
+  margin-top: -10%;
   text-align: center;
   
 
