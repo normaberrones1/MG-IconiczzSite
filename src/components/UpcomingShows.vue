@@ -42,13 +42,18 @@
 <style>
     .upcoming-shows {
         margin: 0 auto;
+        
     }
 
     table {
         width: 100%;
         border-collapse: collapse;
-        color: red;
+        color: rgb(83, 7, 7);
+        display: flex;
+        flex-direction: column;
+        
     }
+
 
     th {
         background-color: #f2f2f2;

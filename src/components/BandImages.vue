@@ -4,7 +4,7 @@
         <div class="img">
             
             <div v-for="(image, index) in images" :key="index" class="slides" :class="{active: currentSlide === index}">
-                <img :src="image" :alt="`slide${index}`" />
+                <img :src="image"/>
             </div>
 
             <div class="img-carousel">
@@ -49,14 +49,6 @@ export default {
 </script>
 
 <style>
-
-@media (min-width: 1024px) {
-    .band-images {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-    }
-}
 
 
 

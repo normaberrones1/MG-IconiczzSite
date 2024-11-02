@@ -1,12 +1,12 @@
 <template>
 
+  <div v-if="loading" class="loading-image">
+    <img src="../public/IMG_3862.jpeg" alt="loading" />
+  </div>
 
 
-  <header>
+  <header v-else>
     <div class="wrapper">
-      
-      
-
       <HomeDescription msg="Mike Gonzalez & The Iconiczz" />
 
       <nav>
@@ -27,24 +27,29 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HomeDescription from './components/HomeDescription.vue';
+import { ref, onMounted } from 'vue';
 
+const loading = ref(true);
+
+onMounted(() => {
+  setTimeout(() => {
+    loading.value = false;
+  }, 2500);
+});
 
 </script>
 
 <style scoped>
 
 nav {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 25%;
   padding: 1rem 0;
+  
 }
 
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
 
 nav a.router-link-exact-active:hover {
   background-color: transparent;
@@ -58,18 +63,21 @@ nav a:first-of-type {
   border: 0;
 }
 
+.loading-image {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+}
 
 .wrapper {
-  background-image: url('./public/IMG_3862.jpeg');
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  padding: 19.0rem;
-  margin-top: -10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  
-
+  padding: 1rem;
 }
+
 
 </style>
