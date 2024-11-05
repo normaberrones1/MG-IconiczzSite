@@ -4,7 +4,7 @@
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
 
-  --vt-c-black: #1b140e;
+  --vt-c-black: #140002;
   --vt-c-black-mute: #282828;
 
 
@@ -16,7 +16,7 @@
   --vt-c-text-light-1: var(--vt-c-brown);
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(161, 74, 23, 0.64);
+  --vt-c-text-dark-2: rgba(214, 202, 195, 0.64);
 }
 
 /* semantic color variables for this project */
